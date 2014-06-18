@@ -21,8 +21,7 @@ namespace Kredit.UI
         {
             set
             {
-                mAmount = value;
-                //todo: Currency symbol should be from db
+                mAmount = value;                
                 string s = "$";
                 if (DecimalPoint)
                     s += mAmount.ToString("N02");

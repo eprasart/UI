@@ -5,8 +5,6 @@ namespace Kredit.UI
 {
     public partial class DataGridView : System.Windows.Forms.DataGridView
     {
-        public int Id = 0;
-
         public DataGridView()
         {
             InitializeComponent();
@@ -16,15 +14,18 @@ namespace Kredit.UI
         public string Column1 { get; set; }
         public string Column2 { get; set; }
 
-        private void DataGridView_SelectionChanged(object sender, EventArgs e)
+        public long Id
         {
-            try
+            get
             {
-                Id = (int)CurrentRow.Cells[0].Value;
-            }
-            catch
-            {
-                Id = 0;
+                long val = 0;
+                try
+                {
+                    if (CurrentRow.Selected == true)
+                        val = (long)CurrentRow.Cells[0].Value;
+                }
+                catch { }
+                return val;
             }
         }
 
