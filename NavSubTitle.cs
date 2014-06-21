@@ -4,7 +4,7 @@ using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 
-namespace Kredit.UI
+namespace kPrasat.UI
 {
     [DefaultProperty("Text")]
     public partial class NavSubTitle : UserControl

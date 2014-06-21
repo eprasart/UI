@@ -1,4 +1,4 @@
-﻿namespace Kredit.UI
+﻿namespace kPrasat.UI
 {
     partial class NavSubTitle
     {

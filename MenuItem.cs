@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
-namespace Kredit.UI
+namespace kPrasat.UI
 {
     public partial class MenuItem : CheckBoxFlat
     {

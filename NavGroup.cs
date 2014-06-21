@@ -6,7 +6,7 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Kredit.UI
+namespace kPrasat.UI
 {
     [DefaultProperty("Text"), DefaultEvent("GroupClick")]
     public partial class NavGroup : UserControl

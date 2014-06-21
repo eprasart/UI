@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Text;
 
-namespace Kredit.UI
+namespace kPrasat.UI
 {
     public partial class DateTimePicker : System.Windows.Forms.DateTimePicker
     {

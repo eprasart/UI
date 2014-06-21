@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-namespace Kredit.UI
+namespace kPrasat.UI
 {
     /// <summary>
     /// Table on POS

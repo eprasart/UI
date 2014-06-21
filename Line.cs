@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Kredit.UI
+namespace kPrasat.UI
 {
     public partial class Line : System.Windows.Forms.Label
     {

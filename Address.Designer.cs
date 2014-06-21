@@ -1,4 +1,4 @@
-﻿namespace Kredit.UI
+﻿namespace kPrasat.UI
 {
     partial class Address
     {
@@ -40,7 +40,7 @@
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.postalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtAddress = new Kredit.UI.TextBox(this.components);
+            this.txtAddress = new kPrasat.UI.TextBox(this.components);
             this.mnuAddress.SuspendLayout();
             this.SuspendLayout();
             // 

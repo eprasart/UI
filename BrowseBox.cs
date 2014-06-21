@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Kredit.UI
+namespace kPrasat.UI
 {
     //public delegate void BrowseHandler(object sender, EventArgs e);
 

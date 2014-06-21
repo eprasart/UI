@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Kredit.UI
+namespace kPrasat.UI
 {
     public delegate void SearchHandler(object sender, EventArgs e);
 

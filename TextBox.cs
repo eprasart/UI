@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Kredit.UI
+namespace kPrasat.UI
 {
     public partial class TextBox : System.Windows.Forms.TextBox
     {

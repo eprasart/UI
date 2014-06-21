@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Kredit.UI
+namespace kPrasat.UI
 {
     public partial class DataGridView : System.Windows.Forms.DataGridView
     {
@@ -19,12 +19,8 @@ namespace Kredit.UI
             get
             {
                 long val = 0;
-                try
-                {
-                    if (CurrentRow.Selected == true)
-                        val = (long)CurrentRow.Cells[0].Value;
-                }
-                catch { }
+                if (CurrentRow != null && CurrentRow.Selected == true)
+                    val = (long)CurrentRow.Cells[0].Value;
                 return val;
             }
         }

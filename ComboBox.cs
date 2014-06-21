@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Text;
 
-namespace Kredit.UI
+namespace kPrasat.UI
 {
     public partial class ComboBox : System.Windows.Forms.ComboBox
     {

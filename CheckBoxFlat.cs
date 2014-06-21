@@ -6,7 +6,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace Kredit.UI
+namespace kPrasat.UI
 {
     public partial class CheckBoxFlat : CheckBox    // todo: change name; cuz Table on POS use this control too
     {
