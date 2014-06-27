@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace kPrasat.UI
 {
-    [DefaultProperty("Caption")]
+    [DefaultProperty("Text")]
     public partial class GroupLabel : UserControl
     {
         public GroupLabel()
@@ -19,7 +19,7 @@ namespace kPrasat.UI
         }
 
         [Browsable(true)]
-        public string Caption
+        public string Text
         {
             get { return lblGroup.Text; }
             set { lblGroup.Text = value; }
