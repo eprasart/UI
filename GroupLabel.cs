@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace kPrasat.UI
 {
-    [DefaultProperty("Text")]
+    [DefaultProperty("Caption")]
     public partial class GroupLabel : UserControl
     {
         public GroupLabel()
@@ -19,7 +19,7 @@ namespace kPrasat.UI
         }
 
         [Browsable(true)]
-        public string Text
+        public string Caption
         {
             get { return lblGroup.Text; }
             set { lblGroup.Text = value; }
@@ -33,6 +33,6 @@ namespace kPrasat.UI
         private void GroupLabel_ForeColorChanged(object sender, EventArgs e)
         {
             lblGroup.ForeColor = ForeColor;
-        }       
+        }
     }
 }
