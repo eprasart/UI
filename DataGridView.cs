@@ -11,9 +11,6 @@ namespace kPrasat.UI
             AutoGenerateColumns = false;
         }
 
-        public string Column1 { get; set; }
-        public string Column2 { get; set; }
-
         public long Id
         {
             get
@@ -26,27 +23,28 @@ namespace kPrasat.UI
         }
 
         public void ShowLessColumns(bool b = false)
-        {
+        {           
             if (b)  // Show 2 columns
             {
-                for (int i = 1; i < ColumnCount; i++)   // Skip Id
+                Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                for (int i = 3; i < ColumnCount; i++)   // Skip Id
                 {
-                    int counter = 0;
-                    string pName = Columns[i].Name.ToUpper();
-                    Columns[Column2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                    if (pName != Column1.ToUpper() && pName != Column2.ToUpper())
-                    {
+                    //int counter = 0;
+                    //string pName = Columns[i].Name.ToUpper();
+                    //Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    //if (pName != Column1.ToUpper() && pName != Column2.ToUpper())
+                    //{
                         Columns[i].Visible = false;
-                        counter++;
-                        if (counter == 2) return;
-                    }
+                        //counter++;
+                        //if (counter == 2) return;
+                    //}
                 }
             }
             else
             {
                 for (int i = 1; i < ColumnCount; i++)
                     Columns[i].Visible = true;
-                Columns[Column2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             }
         }
     }
