@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace kPrasat.UI
+namespace kBit.UI
 {
     public partial class Address : UserControl
     {

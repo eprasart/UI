@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace kPrasat.UI
+namespace kBit.UI
 {
     public partial class Line : System.Windows.Forms.Label
     {

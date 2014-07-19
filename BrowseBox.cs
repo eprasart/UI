@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace kPrasat.UI
+namespace kBit.UI
 {
     //public delegate void BrowseHandler(object sender, EventArgs e);
 

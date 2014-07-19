@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-namespace kPrasat.UI
+namespace kBit.UI
 {
     /// <summary>
     /// Table on POS

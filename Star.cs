@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
-namespace kPrasat.UI
+namespace kBit.UI
 {
     public partial class Star : System.Windows.Forms.Label
     {

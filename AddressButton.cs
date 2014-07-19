@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Text;
 
-namespace kPrasat.UI
+namespace kBit.UI
 {
     public partial class AddressButton : System.Windows.Forms.Button
     {

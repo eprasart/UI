@@ -7,7 +7,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace kPrasat.UI
+namespace kBit.UI
 {
     [DefaultProperty("Caption")]
     public partial class GroupLabel : UserControl

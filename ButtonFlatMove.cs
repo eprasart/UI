@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace kPrasat.UI
+namespace kBit.UI
 {
     //todo: name?? menuitem also use this control
     public partial class ButtonFlatMove : ButtonFlat

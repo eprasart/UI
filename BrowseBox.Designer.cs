@@ -1,4 +1,4 @@
-﻿namespace kPrasat.UI
+﻿namespace kBit.UI
 {
     partial class BrowseBox
     {

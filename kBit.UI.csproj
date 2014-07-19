@@ -8,8 +8,8 @@
     <ProjectGuid>{30E4439A-C188-479F-852B-A58CBF8B0AB6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>kPrasat.UI</RootNamespace>
-    <AssemblyName>kPrasat.UI</AssemblyName>
+    <RootNamespace>kBit.UI</RootNamespace>
+    <AssemblyName>kBit.UI</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>

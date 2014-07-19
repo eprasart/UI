@@ -4,7 +4,7 @@ using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 
-namespace kPrasat.UI
+namespace kBit.UI
 {
     [DefaultProperty("Caption")]
     public partial class NavTitle : UserControl
