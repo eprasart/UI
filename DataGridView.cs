@@ -5,6 +5,8 @@ namespace kBit.UI
 {
     public partial class DataGridView : System.Windows.Forms.DataGridView
     {
+        private long _Id = 0;
+
         public DataGridView()
         {
             InitializeComponent();
@@ -13,17 +15,11 @@ namespace kBit.UI
 
         public long Id
         {
-            get
-            {
-                long val = 0;
-                if (CurrentRow != null && CurrentRow.Selected == true)
-                    val = (long)CurrentRow.Cells[0].Value;
-                return val;
-            }
+            get { return _Id; }
         }
 
         public void ShowLessColumns(bool b = false)
-        {           
+        {
             if (b)  // Show 2 columns
             {
                 Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -34,9 +30,9 @@ namespace kBit.UI
                     //Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                     //if (pName != Column1.ToUpper() && pName != Column2.ToUpper())
                     //{
-                        Columns[i].Visible = false;
-                        //counter++;
-                        //if (counter == 2) return;
+                    Columns[i].Visible = false;
+                    //counter++;
+                    //if (counter == 2) return;
                     //}
                 }
             }
@@ -46,6 +42,15 @@ namespace kBit.UI
                     Columns[i].Visible = true;
                 Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             }
+        }
+
+        private void DataGridView_SelectionChanged(object sender, EventArgs e)
+        {
+            long val = 0;
+            if (SelectedRows.Count > 0)//&& CurrentRow.Selected == true)
+                val = (long)SelectedRows[0].Cells[0].Value;
+            //val = (long)CurrentRow.Cells[0].Value;
+            _Id = val;
         }
     }
 }

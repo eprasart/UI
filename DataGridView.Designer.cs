@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            //((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // DataGridView
-            //             
-            //((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+            // 
+            this.SelectionChanged += new System.EventHandler(this.DataGridView_SelectionChanged);
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
         }
