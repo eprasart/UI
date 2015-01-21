@@ -33,6 +33,7 @@
             // TextBox
             // 
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBox_KeyDown);
+            this.Leave += new System.EventHandler(this.TextBox_Leave);
             this.ResumeLayout(false);
 
         }
