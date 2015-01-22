@@ -36,7 +36,7 @@ namespace kBit.UI
 
         private void ComboBox_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
         {
-            if (bTab) Misc.SendTabKey(e);
+            if (bTab) Misc.SendTabKey(e);            
         }
 
         //TODO: write this one; need ref to Library.dll

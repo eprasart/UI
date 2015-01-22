@@ -41,6 +41,7 @@ namespace kBit.UI
                 for (int i = 1; i < ColumnCount; i++)
                     Columns[i].Visible = true;
                 Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                Columns[ColumnCount-1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;  // Last columns always 'Fill'
             }
         }
 
@@ -48,7 +49,10 @@ namespace kBit.UI
         {
             long val = 0;
             if (SelectedRows.Count > 0)//&& CurrentRow.Selected == true)
-                val = (long)SelectedRows[0].Cells[0].Value;
+            {
+                try { val = (long)SelectedRows[0].Cells[0].Value; }
+                catch { }
+            }
             //val = (long)CurrentRow.Cells[0].Value;
             _Id = val;
         }
