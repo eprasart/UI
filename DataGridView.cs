@@ -48,8 +48,12 @@ namespace kBit.UI
         {
             long val = 0;
             if (SelectedRows.Count > 0)//&& CurrentRow.Selected == true)
-                val = (long)SelectedRows[0].Cells[0].Value;
-            //val = (long)CurrentRow.Cells[0].Value;
+                try
+                {
+                    val = (long)SelectedRows[0].Cells[0].Value;
+                    //val = (long)CurrentRow.Cells[0].Value;
+                }
+                catch { }   // Error for dgvSchedule since Id is null (when .AddRow())
             _Id = val;
         }
     }
