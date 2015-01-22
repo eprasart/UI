@@ -9,7 +9,7 @@ namespace kBit.UI
 {
     public partial class Bill : ButtonFlat
     {
-        private double mAmount;
+        private decimal mAmount;
         public bool DecimalPoint { get; set; }
 
         public Bill()
@@ -17,7 +17,7 @@ namespace kBit.UI
             InitializeComponent();
         }
 
-        public double Amount
+        public decimal Amount
         {
             set
             {

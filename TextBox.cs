@@ -9,6 +9,7 @@ namespace kBit.UI
     {
         private bool bTab = true;
         public bool Numeric { get; set; }
+        public string Format { get; set; }
 
         public TextBox()
         {
@@ -51,16 +52,16 @@ namespace kBit.UI
             }
             try
             {
-                double d;
+                decimal d;
                 if (factor == 1)
-                    d = double.Parse(Text);
+                    d = decimal.Parse(Text);
                 else
                 {
                     s = Text.Substring(0, Text.Length - 1);
-                    d = double.Parse(s);
+                    d = decimal.Parse(s);
                     d *= factor;
                 }
-                Text = d.ToString("#,0");   //todo: no fraction
+                Text = d.ToString(Format);   //todo: no fraction => NumericFormat property?
             }
             catch { }
         }
