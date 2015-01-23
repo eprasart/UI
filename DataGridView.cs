@@ -47,13 +47,8 @@ namespace kBit.UI
         private void DataGridView_SelectionChanged(object sender, EventArgs e)
         {
             long val = 0;
-            if (SelectedRows.Count > 0)//&& CurrentRow.Selected == true)
-                try
-                {
-                    val = (long)SelectedRows[0].Cells[0].Value;
-                    //val = (long)CurrentRow.Cells[0].Value;
-                }
-                catch { }   // Error for dgvSchedule since Id is null (when .AddRow())
+            if (SelectedRows.Count > 0 && SelectedRows[0].Cells[0].Value != null)
+                val = (long)SelectedRows[0].Cells[0].Value;
             _Id = val;
         }
     }
