@@ -28,6 +28,16 @@ namespace kBit.UI
             get { return bTab; }
         }
 
+        public bool IsEmpty
+        {
+            get { return Text.Length == 0; }
+        }
+
+        public bool IsEmptyTrim
+        {
+            get { return Text.Trim().Length == 0; }
+        }
+
         private void TextBox_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
         {
             if (bTab) Misc.SendTabKey(e);

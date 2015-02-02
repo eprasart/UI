@@ -29,6 +29,11 @@ namespace kBit.UI
             get { return bTab; }
         }
 
+        public bool Unspecified
+        {
+            get { return (SelectedIndex == -1); }
+        }
+
         public bool Required
         {
             set { this.BackColor = Color.Beige; }
@@ -36,17 +41,17 @@ namespace kBit.UI
 
         private void ComboBox_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
         {
-            if (bTab) Misc.SendTabKey(e);            
+            if (bTab) Misc.SendTabKey(e);
         }
 
         //TODO: write this one; need ref to Library.dll
         //public void SelectedID
         //{
-            //get{
-            //      Record Iden = (Record)cbo.SelectedItem;
+        //get{
+        //      Record Iden = (Record)cbo.SelectedItem;
 
-            //return Iden.ID;
-            //}
+        //return Iden.ID;
+        //}
         //}
     }
 }
