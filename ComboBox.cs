@@ -42,7 +42,10 @@ namespace kBit.UI
         public string Value
         {
             set { SelectedValue = value; }
-            get { return SelectedValue.ToString(); }
+            get
+            {
+                return SelectedValue != null ? SelectedValue.ToString() : "";
+            }
         }
 
         private void ComboBox_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
