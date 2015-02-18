@@ -39,6 +39,12 @@ namespace kBit.UI
             set { this.BackColor = Color.Beige; }
         }
 
+        public string Value
+        {
+            set { SelectedValue = value; }
+            get { return SelectedValue.ToString(); }
+        }
+
         private void ComboBox_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
         {
             if (bTab) Misc.SendTabKey(e);
