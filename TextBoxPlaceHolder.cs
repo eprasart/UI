@@ -13,8 +13,8 @@ namespace kBit.UI
     [DefaultProperty("Text")]
     public partial class TextBoxPlaceHolder : UserControl
     {
-        [Browsable(true)]
-        public event EventHandler TextChanged;
+        //    [Browsable(true)]
+        //    public event EventHandler TextChanged;
 
         public TextBoxPlaceHolder()
         {
@@ -56,10 +56,10 @@ namespace kBit.UI
             base.OnKeyDown(e);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            TextChanged(sender, e);
-        }
+        //private void textBox1_TextChanged(object sender, EventArgs e)
+        //{
+        //    TextChanged(sender, e);
+        //}
 
         private void TextBoxPlaceHolder_EnabledChanged(object sender, EventArgs e)
         {
