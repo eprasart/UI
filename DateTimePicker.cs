@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Text;
 
-namespace kBit.UI
+namespace kUI
 {
     public partial class DateTimePicker : System.Windows.Forms.DateTimePicker
     {

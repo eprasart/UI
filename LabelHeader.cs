@@ -4,7 +4,7 @@ using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 
-namespace kBit.UI
+namespace kUI
 {
     [DefaultProperty("Text")]
     public partial class LabelHeader : UserControl

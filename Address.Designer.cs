@@ -1,4 +1,4 @@
-﻿namespace kBit.UI
+﻿namespace kUI
 {
     partial class Address
     {
@@ -40,7 +40,7 @@
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.postalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtAddress = new kBit.UI.TextBox(this.components);
+            this.txtAddress = new kUI.TextBox(this.components);
             this.mnuAddress.SuspendLayout();
             this.SuspendLayout();
             // 

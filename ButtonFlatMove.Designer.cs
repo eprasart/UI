@@ -1,4 +1,4 @@
-﻿namespace kBit.UI
+﻿namespace kUI
 {
     partial class ButtonFlatMove
     {

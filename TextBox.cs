@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Text;
 using System.Windows.Forms;
 
-namespace kBit.UI
+namespace kUI
 {
     public partial class TextBox : System.Windows.Forms.TextBox
     {

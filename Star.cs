@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
-namespace kBit.UI
+namespace kUI
 {
     public partial class Star : System.Windows.Forms.Label
     {

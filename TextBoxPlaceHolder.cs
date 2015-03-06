@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace kBit.UI
+namespace kUI
 {
     [DefaultProperty("Text")]
     public partial class TextBoxPlaceHolder : UserControl

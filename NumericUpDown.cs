@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace kBit.UI
+namespace kUI
 {
     public partial class NumericUpDown : System.Windows.Forms.NumericUpDown
     {

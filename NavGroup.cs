@@ -6,7 +6,7 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 
-namespace kBit.UI
+namespace kUI
 {
     [DefaultProperty("Text"), DefaultEvent("GroupClick")]
     public partial class NavGroup : UserControl

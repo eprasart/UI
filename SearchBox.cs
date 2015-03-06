@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace kBit.UI
+namespace kUI
 {
     public delegate void SearchHandler(object sender, EventArgs e);
 

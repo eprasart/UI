@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace kBit.UI
+namespace kUI
 {
     public partial class Line : System.Windows.Forms.Label
     {

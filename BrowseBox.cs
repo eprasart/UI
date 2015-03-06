@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace kBit.UI
+namespace kUI
 {
     //public delegate void BrowseHandler(object sender, EventArgs e);
 

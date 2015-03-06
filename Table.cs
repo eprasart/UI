@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-namespace kBit.UI
+namespace kUI
 {
     /// <summary>
     /// Table on POS

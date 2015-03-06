@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace kBit.UI
+namespace kUI
 {
     class Misc
     {

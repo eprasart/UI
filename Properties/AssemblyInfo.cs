@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("kBit.UI")]
-[assembly: AssemblyDescription("UI")]
+[assembly: AssemblyTitle("kUI")]
+[assembly: AssemblyDescription("kUI")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("kBit")]
-[assembly: AssemblyProduct("kBit.UI")]
-[assembly: AssemblyCopyright("Copyright ©  kBit")]
-[assembly: AssemblyTrademark("kBit")]
+[assembly: AssemblyCompany("kUI")]
+[assembly: AssemblyProduct("kUI")]
+[assembly: AssemblyCopyright("Copyright ©  kUI")]
+[assembly: AssemblyTrademark("kUI")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
