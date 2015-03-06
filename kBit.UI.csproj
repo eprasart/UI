@@ -201,6 +201,12 @@
     <Compile Include="Number.Designer.cs">
       <DependentUpon>Number.cs</DependentUpon>
     </Compile>
+    <Compile Include="NumericUpDown.cs">
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="NumericUpDown.Designer.cs">
+      <DependentUpon>NumericUpDown.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -320,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Number.resx">
       <DependentUpon>Number.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumericUpDown.resx">
+      <DependentUpon>NumericUpDown.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
