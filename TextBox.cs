@@ -41,6 +41,7 @@ namespace kUI
         private void TextBox_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
         {
             if (bTab) Misc.SendTabKey(e);
+            if (!Numeric) return;
         }
 
         private void TextBox_Leave(object sender, EventArgs e)
@@ -74,6 +75,35 @@ namespace kUI
                 Text = d.ToString(Format);   //todo: no fraction => NumericFormat property?
             }
             catch { }
+        }
+
+        /// <summary>
+        /// Move the cursor to the end and focus
+        /// </summary>
+        public void Focus2()
+        {
+            SelectionStart = Text.Length;
+            Focus();
+        }
+
+        private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Numeric) return;
+            //e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && (e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1)
+
+            var c = e.KeyChar;
+            var s = c.ToString().ToUpper();
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.' && (s != "T" && s != "K" && s != "M"))
+                e.Handled = true;
+
+            // Only allow one letter
+            var textUpper = Text.ToUpper();
+            if (char.IsLetter(e.KeyChar) && (textUpper.Contains("T") || textUpper.Contains("K") || textUpper.Contains("M")))
+                e.Handled = true;
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && (Text.IndexOf('.') > -1))
+                e.Handled = true;
         }
     }
 }
